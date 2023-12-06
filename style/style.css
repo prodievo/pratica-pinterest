@@ -1,0 +1,100 @@
+.boxgeorge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+
+.george{
+    width: 300px;
+    height: 400px;
+
+}
+
+.button-container{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+
+.button-save{
+    background-color: red;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    display: none;
+
+}
+
+.bottom-buttons{
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+
+}
+
+.greybtn{
+    font-weight: bold;
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: none;
+
+
+}
+
+.boxgeorge:hover .greybtn{
+    display: block;
+    animation-duration: 0.1s;
+    animation-name: slideup;
+
+}
+
+.boxgeorge:hover .button-save{
+    display: block;
+    animation-duration: 0.1s;
+    animation-name: slidedown;
+
+
+}
+
+@keyframes slideup {
+    from {
+      margin-bottom: -100px;;
+    }
+  
+    to {
+      margin-bottom: 10px;
+    }
+  }
+
+@keyframes slidedown {
+    from {
+      margin-top: -100px;;
+    }
+  
+    to {
+      margin-top: 10px;
+    }
+  }
+
+.boxgeorge:hover{
+    background-color: black;
+
+
+}
